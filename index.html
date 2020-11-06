@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A.D.W.A.</title>
+  <link rel="shortcut icon" href="./src/img/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-sanitize.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+  <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Lora|Playfair+Display:600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./scripts/glider.css">
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+</head>
+
+<body ng-app="main" ng-controller="defaultCtrl">
+  <div id="mainNav" class="mainNav">
+  <div class="header">
+    <div class="titleContainer">
+      <a href="#/!" class="button" id="logoContainer"><img id="logo" alt="ADWA Logo" src="./src/img/logo.png"></a>
+      <a href="#/!" class="button" id="title">A.D.W.A.</a>
+    </div>
+
+    <div class="wrapper">
+      <div id="container" class="container" ng-click="showOpts()">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    </div>
+  </div>
+  <div id="options"class="options">
+      <a ng-repeat="page in pages" class="nav-link" ng-class="{selectedNav: isActive('/{{page.href}}')}" ng-click="showOpts()" href="#!/{{page.href}}">{{page.title}}</a>
+  </div>
+  <div class="row">
+    <footer>
+      <a href="https://twitter.com/" target="_blank">
+        <icon alt="Twitter" val="twitter"></icon>
+      </a>
+      <a href="mailto:info@adwa-digital.org">
+        <icon alt="Email" val="email"></icon>
+      </a>
+
+    </footer>
+  </div>
+
+  </div>
+
+  <div id = "mainView" class="mainView" ng-view></div>
+
+</script>
+  <script type="text/javascript" src="./scripts/index.js"></script>
+</body>
+</html>

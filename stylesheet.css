@@ -1,0 +1,397 @@
+@font-face {
+		font-family: 'inconsolata';
+		src: url('src/fonts/inconsolata.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+}
+.wrapper{
+
+}
+.row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+}
+
+/* Main Page CSS*/
+body,html{
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	display: block;
+
+}
+.mainNav
+{
+	font-size: calc(15px + 1.4vw);
+	display: flex;
+	flex-direction: column;
+	padding-top: 3%;
+	padding-bottom: 5%;
+
+	height: 100%;
+  width: 25%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #09091a;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.selectedNav{
+	color: #fff !important;
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 12px 0;
+}
+#title{
+	margin: 20px 0;
+	font-family: 'Courier Prime', monospace;
+}
+.titleContainer{
+	display: flex;
+	flex-direction: column;
+}
+.titleContainer{
+	margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.titleContainer a{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.options {
+	padding-top: 12px;
+	display: flex;
+	flex-direction: column;
+	font-size: 18px;
+	line-height: 20px;
+	margin: 0 auto;
+}
+.mainNav a{
+	text-decoration: none;
+	font-family: 'Courier Prime', monospace;
+	line-height: 18px;
+	color: #cfb53b ;
+}
+.mainNav a:hover, .selected{
+	color: #fff;
+}
+#logoContainer{
+	width: 130px;
+	margin: 0 auto;
+}
+#logo{
+	width: calc(55pt + 3vw);
+	margin: 0 auto;
+}
+
+.mainView{
+	margin-left: 25%;
+	min-height: 100%;
+	padding: 0;
+
+}
+footer{
+	bottom: 0;
+	width: 7%;
+	text-align: center;
+	position: fixed;
+	padding-top: 2%;
+	padding-bottom: 3%;
+	display: flex;
+  justify-content: space-around;
+}
+icon div{
+	width: calc(15px + 0.5vw);
+}
+icon:hover{
+	background: #cfb53b;
+}
+icon:hover path{
+	fill: white;
+}
+.vgap{
+	padding-top: 30px;
+}
+.container {
+  display: none;
+  cursor: pointer;
+}
+.wrapper{
+
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #cfb53b ;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.ComponentContainer{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+}
+#mainGallery{
+	width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 3% 0 3% 0;
+}
+#mainGallery img{
+	width: 100%;
+}
+#gallContainer{
+
+}
+a.right.carousel-control {
+	display: none;
+}
+a.left.carousel-control {
+	display: none;
+}
+.carousel-control.left, .carousel-control.right {
+  display: none;
+}
+.carousel-indicators{
+	display: none;
+}
+.carousel .item {
+	-webkit-transition: opacity 3s;
+	 -moz-transition: opacity 3s;
+	 -ms-transition: opacity 3s;
+	 -o-transition: opacity 3s;
+	 transition: opacity 3s;
+ }
+#wlcmMsgContainer{
+	text-align: center;
+  padding: 2% 0;
+	position: fixed;
+	z-index: 100;
+}
+#wlcmMsgContainer p{
+	margin: 0 auto;
+	color: rgba(255,255,255, 0.6);
+	font-size: 25pt;
+}
+
+/* about page css*/
+.profilePic{
+	width: 230px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.profilePic img{
+	width: 100%;
+	height: auto;
+}
+.text{
+	font-size: calc(10px + 0.6vw);
+	font-family: 'inconsolata';
+	line-height: calc(16px + 0.6vw);
+	text-align: justify;
+	padding: 5%;
+}
+.text a{
+	color: #ef1897;
+	text-decoration: none;
+}
+.text a:hover{
+	text-decoration: underline;
+}
+
+/*
+General Page CSS
+
+*/
+.mainpage{
+	width: 100%;
+	padding-top: 12vh;
+	margin: 0 auto;
+	margin-bottom: 120px;
+	background: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#headerImgContainer{
+	padding: 0;
+	width: 600px;
+	height: 69vh;
+	margin: 0 auto;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#headerImgContainer img{
+	width: 100%;
+	margin: 0 auto;
+}
+#pageTitle{
+	color: #cfb53b;
+	font-size: calc(12px + 4vw);
+	margin: 0 auto;
+	height: 31vh;
+}
+.paragTitle{
+	margin-bottom: 18px;
+  margin-left: 10%;
+}
+.paragTitle h2{
+	color: green;
+	font-size: calc(10px + 3.3vw);
+	margin: 0 auto;
+	margin-bottom: 14px;
+	font-family: 'Roboto Mono', monospace;
+}
+.paragParag{
+	width: 80%;
+	margin: 0 auto;
+}
+.paragParag P{
+	padding-bottom: 30px;
+	text-align: justify;
+	margin: 0 auto;;
+	color: #110D0E;
+	font-family: 'Roboto', sans-serif;
+	font-size: calc(20px + 0.34vw);
+	line-height: 19.3pt;
+
+}
+.paragImg{
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 16px 0;
+}
+.paragImg img{
+	width: 100%;
+}
+.paragTitle, .paragParag, .paragImg{
+	background:none;
+}
+
+/*mobile view*/
+@media only screen and (max-width: 669px) {
+  .container {
+    display: inline-block;
+  }
+	.wrapper{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+	}
+	.options, footer{
+		display: none;
+	}
+	.mainNav{
+		height: auto;
+	  width: 100%;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		font-size: calc(12px + 8vw);
+		font-weight: bold;
+	}
+	.mainNav a{
+		font-size: calc(10px + 3.3vw);
+		line-height: calc(10px + 3vw);
+    margin: 0.95em 0;
+	}
+	.mainView{
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.showOptions {
+		height: 100%;
+		position: fixed;
+	}
+	.showOptions .options{
+		display: flex;
+		flex: 1;
+		text-align: left;
+	}
+	.showOptions footer{
+		display: flex;
+		width: 55%;
+		margin: 0 auto;
+	}
+	.profilePic{
+		width: 80%;
+	}
+	.titleContainer{
+		flex-direction: row;
+	}
+	#logoContainer{
+		flex: 43px 0 0;
+	}
+	#logo{
+		width: 100%;
+	}
+	#title{
+		flex: 80% 0 0;
+		margin-left: 25px;
+		font-size: calc(14pt + 2vw);
+	}
+
+	#headerImgContainer{
+		width: 100%;
+	}
+	#headerImgContainer img{
+		width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	}
+	#mainGallery{
+		width: 100%;
+	}
+
+	.paragImg{
+		padding: 16px 3.14%;
+		width: auto;
+
+	}
+	.paragTitle{
+		margin: 10%;
+	}
+	.paragTitle h2{
+		font-size: calc(20px + 6vw);
+	}
+}
+/*mobile view*/
+@media only screen and (max-width: 838px) {
+	#headerImgContainer {
+    width: 100%;
+	}
+}
