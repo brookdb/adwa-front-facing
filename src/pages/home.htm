@@ -2,11 +2,9 @@
   <div class="paragTitle" ng-if="isH2(text.type)" ng-bind-html="text.template"></div>
   <div class="paragParag" ng-if="isP(text.type)" ng-bind-html="text.template"></div>
 </div>
-
-<div id="gallContainer" class="ComponentContainer" ng-controller="CarouselCtrl">
-  <div uib-carousel class="mainslide" id="mainGallery" active="active" interval="3200" no-wrap="noWrapSlides">
-    <div uib-slide ng-repeat="img in gallery_imgs" index="$index" >
-      <img class="galleryImg" id="{{img.id}}" src="{{trustSrc(img.source)}}" alt_text="{{img.alt_text}}"/>
-    </div>
+<div class="text-wrapper">
+  <div class="paragTitle">
+    <h2>Welcome to our site.</h2>
   </div>
+
 </div>
