@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="am">
+<html>
 <head>
   <title>A.D.W.A.</title>
   <link rel="shortcut icon" href="./src/img/logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.28/angular-ui-router.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-sanitize.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
@@ -34,7 +35,7 @@
     </div>
   </div>
   <div id="options"class="options">
-      <a ng-repeat="page in pages" class="nav-link" ng-class="{selectedNav: isActive('/{{page.href}}')}" ng-click="showOpts()" href="#!/{{page.href}}">{{page.title}}</a>
+      <a ng-repeat="page in pages" class="nav-link" ng-class="{selectedNav: isActive('/{{page.href}}')}" ng-click="showOpts()" href="#!/{{page.href}}" ui-sref="{{page.href}}">{{page.title}}</a>
   </div>
   <div class="row">
     <footer>
@@ -50,7 +51,7 @@
 
   </div>
 
-  <div id = "mainView" class="mainView" ng-view></div>
+  <div id = "mainView" class="mainView" ng-if="defaultCtrlLoaded" ng-view></div>
 
 </script>
   <script type="text/javascript" src="./scripts/index.js"></script>
