@@ -1,4 +1,4 @@
-<div class="mainpage">
+<div class="mainpage" ng-if="hasCnt">
   <div id="pagetext" ng-repeat="text in cnt.children" index="$index">
     <div class="paragTitle" ng-if="isH2(text.tagName)" ng-bind-html="text.outerHTML"></div>
     <div class="paragParag" ng-if="isP(text.tagName)" ng-bind-html="text.outerHTML"></div>
