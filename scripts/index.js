@@ -34,7 +34,6 @@ app.config(function($routeProvider) {
     //load main navigation
     bloggerService.get('navigation').then(function (results) {
       $rootScope.pages = results;
-      console.log($rootScope.pages);
       $rootScope.defaultCtrlLoaded = true;
     });
 
@@ -44,7 +43,6 @@ app.config(function($routeProvider) {
   //load main navigation
   bloggerService.get('navigation').then(function (results) {
     $rootScope.pages = results;
-    console.log($rootScope.pages);
     $rootScope.defaultCtrlLoaded = true;
   });
 
@@ -82,14 +80,12 @@ app.config(function($routeProvider) {
     let pageID = $rootScope.pages.filter(obj=> {
       return obj.href === pagelink;
     })[0].id;
-    console.log(pageID);
     let content = "";
     let post = {'post' : {'postID': pageID}};
 
     bloggerService.post("page", post)
     .then((response)=>
     {
-      console.log(response);
       $scope.page = response;
       $scope.hasCnt=true;
       if($scope.page.content){
