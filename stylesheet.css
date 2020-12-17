@@ -79,7 +79,18 @@ body,html{
 	font-size: 18px;
 	line-height: 20px;
 	margin: 0 auto;
+	text-align: center;
 }
+.email{
+	width: 75%;
+	margin: 0 auto;
+	border: 1px solid #dfe1e5;
+  box-shadow: none;
+  border-radius: 24px;
+  margin-bottom: 8px;
+	margin-top: 10px;
+}
+
 .mainNav a{
 	text-decoration: none;
 	font-family: 'Courier Prime', monospace;
@@ -301,6 +312,29 @@ General Page CSS
 	background:none;
 }
 
+/*subscribe box*/
+#mc_embed_signup_scroll{
+	justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  max-width: 75%;
+  margin: 0 auto;
+}
+#mc_embed_signup_scroll h4
+{
+	font-family: 'Roboto Mono', monospace;
+  color: green;
+}
+#mc_embed_signup{
+	margin-top: 86px;
+}
+#mc-embedded-subscribe{
+	width: 90px;
+	margin: 0 auto;
+	border: 1px solid #dfe1e5;
+  box-shadow: none;
+	font-size: 11px;
+}
 /*mobile view*/
 @media only screen and (max-width: 669px) {
   .container {
