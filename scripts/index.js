@@ -104,6 +104,11 @@ app.config(function($routeProvider) {
       {return true;}
       else{return false;}
     }
+    $scope.isList = function(incomingText) {
+      if(incomingText === "UL" || incomingText === "OL")
+      {return true;}
+      else{return false;}
+    }
 
     $scope.isImg = function(incomingText) {
       if(incomingText === "IMG" || incomingText === "FIGURE")
